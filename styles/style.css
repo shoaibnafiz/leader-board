@@ -2,6 +2,10 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 /* Common Style or Utilities */
+nav{
+    background-color: #562EFF;
+    display: flex;
+}
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
@@ -21,6 +25,36 @@ main{
 hr{
     border: 1px solid #D1D1D1;
     margin-bottom: 27px;
+}
+
+/* Nav Style */
+.half-width{
+    width: 50%;
+}
+.idea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.idea img{
+    width: 40.42px;
+    height: 51px;
+    margin-right: 10px;
+}
+.idea p{
+    color: white;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile a{
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
 }
 
 /* Top Players Style */
@@ -120,13 +154,19 @@ hr{
 
 /* Mobile Devices */
 @media only screen and (max-width:688px) {
+    nav .idea{
+        margin-bottom: 30px;
+    }
+    nav .profile a{
+        margin-bottom: 10px;
+    }
     .container{
         width: 100%;
     }
     .players, .blogs, .courses{
         grid-template-columns: repeat(1,1fr);
     }
-    .player, .blog, .course{
+    nav, .profile, .player, .blog, .course{
         flex-direction: column;
     }
 }
