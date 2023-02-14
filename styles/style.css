@@ -5,6 +5,8 @@
 nav{
     background-color: #562EFF;
     display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -28,33 +30,28 @@ hr{
 }
 
 /* Nav Style */
-.half-width{
-    width: 50%;
-}
+
 .idea{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 350px;
 }
 .idea img{
     width: 40.42px;
     height: 51px;
-    margin-right: 10px;
-}
-.idea p{
-    color: white;
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: 500px;
 }
 .profile{
     display: flex;
     align-items: center;
+    margin-right: 300px;
 }
-.profile a{
+.idea a, .profile a{
     text-decoration: none;
     color: white;
-    margin: 0 20px;
+}
+.profile a{
+    margin-right: 20px;
 }
 
 /* Top Players Style */
