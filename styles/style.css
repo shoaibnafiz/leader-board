@@ -5,7 +5,7 @@
 nav{
     background-color: #562EFF;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 10px 0;
 }
 body{
@@ -35,7 +35,6 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 350px;
 }
 .idea img{
     width: 40.42px;
@@ -44,7 +43,6 @@ hr{
 .profile{
     display: flex;
     align-items: center;
-    margin-right: 300px;
 }
 .idea a, .profile a{
     text-decoration: none;
@@ -151,10 +149,10 @@ hr{
 
 /* Mobile Devices */
 @media only screen and (max-width:688px) {
-    nav .idea{
+    .idea{
         margin-bottom: 30px;
     }
-    nav .profile a{
+    .profile a{
         margin-bottom: 10px;
     }
     .container{
